@@ -1,0 +1,117 @@
+:root{
+    --bgcolor:#fafaf8;
+    --bgcolor2:rgb(19, 19, 19);
+    --textcolor:rgb(19, 19, 19);
+    --textcolor2:#fafaf8;
+    --text:Arial, Helvetica, sans-serif;
+    --textlinkborderradius:12px;
+    --sectionborderradius:30px;
+    --marginforleftright:75px;
+    --paddingforlinksbuttons:12px;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bgcolor);
+}
+.navbar{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.nav-li{
+    gap: 50px;
+    display: flex;
+    list-style: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.nav-li a{
+    text-decoration: none;
+    color: var(--textcolor);
+    position: relative;
+    font-size: large;
+    font-family: var(--text);
+}
+/* Underline that grows from center */
+.nav-li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  right: 50%;
+  height: 1.5px;
+  background: currentColor;
+  transition: left 0.6s ease, right 0.6s ease;
+}
+
+.nav-li a:hover::after {
+  left: 0;
+  right: 0;
+}
+.nav-big-button a{
+    margin-left: auto;
+    list-style: none;
+    padding: var(--paddingforlinksbuttons);
+    text-decoration: none;
+    background-color: var(--textcolor);
+    color: var(--textcolor2);
+    font-family: var(--text);
+    border-radius: var(--textlinkborderradius);
+    font-weight: bold;
+}
+.hero{
+    width: auto;
+    height: 14cm;
+    background-color: var(--bgcolor2);
+    font-family: var(--text);
+    border-radius: var(--sectionborderradius);
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: var(--marginforleftright);
+    margin-right: var(--marginforleftright);
+}
+.hero-para p{
+    color:var(--textcolor2);
+    font-size: large;
+    padding-top:3.5cm;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-para a{
+    text-decoration: none;
+    color: var(--textcolor);
+    background-color: var(--bgcolor);
+    padding: var(--paddingforlinksbuttons);
+    border-radius: var(--textlinkborderradius);
+}
+.hero-button{
+    justify-content: center;
+    display: flex;    
+}
+.grid-column{
+    float: left;
+    width: 32.75%;
+    height: 14cm;
+    background-color: var(--bgcolor2);
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: var(--sectionborderradius);
+}
+.grid-row:after {
+    content: "";
+    display: grid;
+    clear: both;
+}
+.grid-row{
+    margin-right: var(--marginforleftright);
+    margin-left: var(--marginforleftright);
+    margin-top: 30px;
+}
