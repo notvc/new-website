@@ -8,6 +8,7 @@
     --sectionborderradius:30px;
     --marginforleftright:75px;
     --paddingforlinksbuttons:12px;
+    --margintopforsections:10px;
 }
 * {
     box-sizing: border-box;
@@ -22,7 +23,13 @@ body{
     margin: 0;
     padding: 0;
     align-items: center;
-    margin-bottom: 10px;
+}
+.nav-img a{
+    transition: transform 0.6s ease;
+    display: inline-flex;
+}
+.nav-img a:hover{
+    transform: scale(1.2);
 }
 .nav-li{
     gap: 50px;
@@ -65,6 +72,11 @@ body{
     font-family: var(--text);
     border-radius: var(--textlinkborderradius);
     font-weight: bold;
+    transition: transform 0.6s ease;
+    display: inline-flex;
+}
+.nav-big-button a:hover{
+    transform: scale(1.1);
 }
 .hero{
     width: auto;
@@ -77,13 +89,19 @@ body{
     padding-right: 100px;
     margin-left: var(--marginforleftright);
     margin-right: var(--marginforleftright);
+    margin-top: var(--margintopforsections);
+}
+.hero-para{
+    padding-top: 100px;
+}
+.hero-para h1{
+    justify-content: center;
+    display: flex;
+    color: var(--textcolor2); 
 }
 .hero-para p{
     color:var(--textcolor2);
     font-size: large;
-    padding-top:3.5cm;
-    margin-left: auto;
-    margin-right: auto;
 }
 .hero-para a{
     text-decoration: none;
@@ -91,6 +109,11 @@ body{
     background-color: var(--bgcolor);
     padding: var(--paddingforlinksbuttons);
     border-radius: var(--textlinkborderradius);
+    transition: transform 0.6s ease;
+    display: inline-flex;
+}
+.hero-para a:hover{
+    transform: scale(1.1);
 }
 .hero-button{
     justify-content: center;
@@ -104,6 +127,35 @@ body{
     margin: 5px;
     box-sizing: border-box;
     border-radius: var(--sectionborderradius);
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 2.5cm;
+    font-family: var(--text);
+}
+.grid-column h1{
+    color: var(--textcolor2);
+    justify-content: center;
+    display: flex; 
+}
+.grid-column p{
+    color: var(--textcolor2);
+}
+.grid-column a{
+    padding: var(--paddingforlinksbuttons);
+    border-radius: var(--textlinkborderradius);
+    text-decoration: none;
+    background-color: var(--textcolor2);
+    color: var(--textcolor);
+    transition: transform 0.6s ease;
+    display: inline-flex;
+}
+.grid-column a:hover{
+    transform: scale(1.1);
+}
+.grid-li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .grid-row:after {
     content: "";
@@ -113,5 +165,5 @@ body{
 .grid-row{
     margin-right: var(--marginforleftright);
     margin-left: var(--marginforleftright);
-    margin-top: 30px;
+    margin-top: var(--margintopforsections);
 }
