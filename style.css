@@ -12,6 +12,7 @@
 }
 * {
     box-sizing: border-box;
+    font-family: var(--text);
 }
 body{
     background-color: var(--bgcolor);
@@ -24,6 +25,11 @@ body{
     padding: 0;
     align-items: center;
 }
+.nav-img {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .nav-img a{
     transition: transform 0.6s ease;
     display: inline-flex;
@@ -34,17 +40,17 @@ body{
 .nav-li{
     gap: 50px;
     display: flex;
-    list-style: inherit;
+    list-style: none;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    padding: 0;
 }
 .nav-li a{
     text-decoration: none;
     color: var(--textcolor);
     position: relative;
     font-size: large;
-    font-family: var(--text);
 }
 /* Underline that grows from center */
 .nav-li a::after {
@@ -62,14 +68,17 @@ body{
   left: 0;
   right: 0;
 }
+.nav-big-button {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .nav-big-button a{
     margin-left: auto;
-    list-style: none;
     padding: var(--paddingforlinksbuttons);
     text-decoration: none;
     background-color: var(--textcolor);
     color: var(--textcolor2);
-    font-family: var(--text);
     border-radius: var(--textlinkborderradius);
     font-weight: bold;
     transition: transform 0.6s ease;
@@ -82,7 +91,6 @@ body{
     width: auto;
     height: 14cm;
     background-color: var(--bgcolor2);
-    font-family: var(--text);
     border-radius: var(--sectionborderradius);
     display: flex;
     padding-left: 100px;
@@ -117,7 +125,86 @@ body{
 }
 .hero-button{
     justify-content: center;
-    display: flex;    
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.column-desc1_1{
+    float: left;
+    width: 33.33%;
+    height: 14cm;
+    background-color: var(--bgcolor2);
+    margin: 5px;
+    border-radius: var(--sectionborderradius);
+}
+.column-desc1_2{
+    float: left;
+    width: 65.52%;
+    height: 14cm;
+    background-color: var(--bgcolor2);
+    border-radius: var(--sectionborderradius);
+    margin: 5px;
+}
+.row-desc1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row-desc1{
+    margin-right: var(--marginforleftright);
+    margin-left: var(--marginforleftright);
+    margin-top: var(--margintopforsections);
+}
+.column-desc2_1{
+    float: left;
+    width: 65.52%;
+    height: 14cm;
+    background-color: var(--bgcolor2);
+    margin: 5px;
+    border-radius: var(--sectionborderradius);
+}
+.column-desc2_2{
+    float: left;
+    width: 33.33%;
+    height: 14cm;
+    background-color: var(--bgcolor2);
+    border-radius: var(--sectionborderradius);
+    margin: 5px;
+}
+.row-desc2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row-desc2{
+    margin-right: var(--marginforleftright);
+    margin-left: var(--marginforleftright);
+    margin-top: var(--margintopforsections);
+}
+.row-desc3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-right: var(--marginforleftright);
+    margin-left: var(--marginforleftright);
+    margin-top: var(--margintopforsections);
+}
+.column3_1{
+    grid-column-start: 3;
+    grid-row-start:1;
+    grid-row-end: 3;
+    height: 14cm;
+    background-color: var(--bgcolor2);
+    border-radius: var(--sectionborderradius);
+    color: var(--textcolor);
+    margin-left: 5px;
+}
+.column3_2{
+    height: 7cm;
+    background-color: var(--bgcolor2);
+    border-radius: var(--sectionborderradius);
+    color: var(--textcolor);
+    margin: 5px;
 }
 .grid-column{
     float: left;
@@ -125,12 +212,10 @@ body{
     height: 14cm;
     background-color: var(--bgcolor2);
     margin: 5px;
-    box-sizing: border-box;
     border-radius: var(--sectionborderradius);
     padding-right: 100px;
     padding-left: 100px;
     padding-top: 2.5cm;
-    font-family: var(--text);
 }
 .grid-column h1{
     color: var(--textcolor2);
@@ -156,14 +241,39 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .grid-row:after {
     content: "";
-    display: grid;
+    display: table;
     clear: both;
 }
 .grid-row{
     margin-right: var(--marginforleftright);
     margin-left: var(--marginforleftright);
     margin-top: var(--margintopforsections);
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bgcolor2);
+    color: var(--textcolor2);
+    text-align: center;
+    margin-top: var(--margintopforsections);
+    padding: 10px 0px;
+}
+.footer-li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.footer-li a {
+    color: var(--textcolor2);
+    text-decoration: none;
 }
