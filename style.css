@@ -9,6 +9,7 @@
     --marginforleftright:75px;
     --paddingforlinksbuttons:12px;
     --margintopforsections:20px;
+    --lineargradient:linear-gradient(135deg, #00ccff 10%, #465aec 100%);
 }
 * {
     box-sizing: border-box;
@@ -77,7 +78,7 @@ body{
     margin-left: auto;
     padding: var(--paddingforlinksbuttons);
     text-decoration: none;
-    background-color: var(--textcolor);
+    background: var(--lineargradient);
     color: var(--textcolor2);
     border-radius: var(--textlinkborderradius);
     font-weight: bold;
@@ -114,7 +115,7 @@ body{
 .hero-para a{
     text-decoration: none;
     color: var(--textcolor2);
-    background-color: var(--bgcolor2);
+    background: var(--lineargradient);
     padding: var(--paddingforlinksbuttons);
     border-radius: var(--textlinkborderradius);
     transition: transform 0.6s ease;
@@ -153,7 +154,7 @@ body{
     float: left;
     width: 65.52%;
     height: 14cm;
-    background-color: var(--bgcolor2);
+    background: var(--lineargradient);
     border-radius: var(--sectionborderradius);
     margin: 5px;
     text-align: center;
@@ -201,7 +202,7 @@ body{
     padding: var(--paddingforlinksbuttons);
     border-radius: var(--textlinkborderradius);
     color: var(--textcolor2);
-    background-color: var(--bgcolor2);
+    background: var(--lineargradient);
     font-weight: bold;
     transition: transform 0.6s ease;
     display: inline-flex;
@@ -265,7 +266,7 @@ body{
     float: left;
     width: 32.75%;
     height: 14cm;
-    background-color: var(--bgcolor2);
+    background: var(--lineargradient);
     margin: 5px;
     border-radius: var(--sectionborderradius);
     padding-right: 100px;
@@ -315,11 +316,12 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--bgcolor2);
+    background: var(--lineargradient);
     color: var(--textcolor2);
     text-align: center;
     margin-top: var(--margintopforsections);
     padding: 10px 0px;
+    border-radius: var(--sectionborderradius);
 }
 .footer-li-1 a{
     display: flex;
@@ -376,7 +378,7 @@ body{
 }
 
 /* Mobile: 600px and below */
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     :root {
         --marginforleftright: 16px;
     }
