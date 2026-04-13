@@ -266,7 +266,7 @@ body{
     float: left;
     width: 32.75%;
     height: 14cm;
-    background: var(--lineargradient);
+    background-color: var(--bgcolor2);
     margin: 5px;
     border-radius: var(--sectionborderradius);
     padding-right: 100px;
