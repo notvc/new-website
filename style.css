@@ -9,7 +9,7 @@
     --marginforleftright:75px;
     --paddingforlinksbuttons:12px;
     --margintopforsections:20px;
-    --lineargradient:linear-gradient(135deg, #00943b 0%, #131313 100%);
+    --lineargradient:linear-gradient(90deg, #00943b 0%, #131313 100%);
 }
 * {
     box-sizing: border-box;
