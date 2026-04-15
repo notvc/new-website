@@ -385,7 +385,7 @@ body{
 }
 
 /* Mobile: 600px and below */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px {
     :root {
         --marginforleftright: 16px;
     }
