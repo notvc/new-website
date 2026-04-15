@@ -1,15 +1,15 @@
 :root{
-    --bgcolor:#fafaf8;
-    --bgcolor2:rgb(19, 19, 19);
-    --textcolor:rgb(19, 19, 19);
-    --textcolor2:#fafaf8;
+    --bgcolor:#EE005A;
+    --bgcolor2:#012641;
+    --textcolor:#012641;
+    --textcolor2:#EE005A;
     --text:Arial, Helvetica, sans-serif;
     --textlinkborderradius:12px;
     --sectionborderradius:30px;
     --marginforleftright:75px;
     --paddingforlinksbuttons:12px;
     --margintopforsections:20px;
-    --lineargradient:linear-gradient(90deg, #00943b 0%, #131313 100%);
+    --lineargradient:linear-gradient(90deg, #EE005A 0%, #012641 100%);
 }
 * {
     box-sizing: border-box;
@@ -78,7 +78,7 @@ body{
     margin-left: auto;
     padding: var(--paddingforlinksbuttons);
     text-decoration: none;
-    background: var(--lineargradient);
+    background-color: var(--bgcolor2);
     color: var(--textcolor2);
     border-radius: var(--textlinkborderradius);
     font-weight: bold;
@@ -115,7 +115,7 @@ body{
 .hero-para a{
     text-decoration: none;
     color: var(--textcolor2);
-    background: var(--lineargradient);
+    background-color: var(--bgcolor2);
     padding: var(--paddingforlinksbuttons);
     border-radius: var(--textlinkborderradius);
     transition: transform 0.6s ease;
@@ -154,7 +154,7 @@ body{
     float: left;
     width: 65.52%;
     height: 14cm;
-    background: var(--lineargradient);
+    background-color: var(--bgcolor2);
     border-radius: var(--sectionborderradius);
     margin: 5px;
     text-align: center;
@@ -202,7 +202,7 @@ body{
     padding: var(--paddingforlinksbuttons);
     border-radius: var(--textlinkborderradius);
     color: var(--textcolor2);
-    background: var(--lineargradient);
+    background-color: var(--bgcolor2);
     font-weight: bold;
     transition: transform 0.6s ease;
     display: inline-flex;
@@ -266,7 +266,7 @@ body{
     float: left;
     width: 32.75%;
     height: 14cm;
-    background-color: var(--bgcolor2);
+    background-color: var(--bgcolor1);
     margin: 5px;
     border-radius: var(--sectionborderradius);
     padding-right: 100px;
@@ -274,19 +274,21 @@ body{
     padding-top: 2.5cm;
 }
 .grid-column h1{
-    color: var(--textcolor2);
+    color: var(--textcolor);
     justify-content: center;
-    display: flex; 
+    display: flex;
+    align-items: center;
+    gap: 5px; 
 }
 .grid-column p{
-    color: var(--textcolor2);
+    color: var(--textcolor);
 }
 .grid-column a{
     padding: var(--paddingforlinksbuttons);
     border-radius: var(--textlinkborderradius);
     text-decoration: none;
-    background-color: var(--textcolor2);
-    color: var(--textcolor);
+    background-color: var(--textcolor);
+    color: var(--textcolor2);
     transition: transform 0.6s ease;
     display: inline-flex;
     font-weight: bold;
@@ -316,7 +318,7 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
-    background: var(--lineargradient);
+    background-color: var(--bgcolor2);
     color: var(--textcolor2);
     text-align: center;
     margin-top: var(--margintopforsections);
@@ -362,18 +364,23 @@ body{
     }
     .column-desc1_1,
     .column-desc1_2,
-    .column-desc2_1,
-    .column-desc2_2 {
+    .column-desc2_1{
         height: auto;
         padding: 50px 40px;
+        width: 100%;
+    }
+    .column-desc2_2{
+        display: none;
     }
     .column3_2 {
         height: auto;
         padding: 30px 40px;
+        margin: 0px;
     }
     .grid-column {
         height: auto;
         padding: 50px 40px;
+        margin: 1px;
     }
 }
 
